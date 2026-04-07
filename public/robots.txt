@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lighthouseschool.edu.in/sitemap.xml

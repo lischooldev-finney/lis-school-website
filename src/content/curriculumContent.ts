@@ -1,0 +1,97 @@
+export const curriculumContent = {
+  hero: {
+    title: 'The Lighthouse School Curriculum Framework',
+    subtitle: 'Cultivating Excellence through Holistic Education',
+    intro: 'Our curriculum framework is a child-centred and comprehensive model designed to support intellectual, emotional, physical, and creative development. It nurtures curiosity, resilience, and a lifelong love for learning while building a strong foundation for academic success and personal growth.',
+    backgroundImage: 'https://images.pexels.com/photos/8466766/pexels-photo-8466766.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  },
+
+  approach: 'Our Smart-Curriculum integrates bilingual exposure, experiential learning, and learner-centred practices to ensure continuity, readiness for primary education, and lifelong learning.',
+
+  domains: [
+    {
+      id: 'language',
+      title: 'Language and Communication Skills',
+      icon: 'MessageSquare',
+      description: 'Strengthening listening, speaking, reading, and writing abilities through structured and age-appropriate learning experiences.',
+      color: 'maroon',
+      details: [
+        'Bilingual language development (English & Regional languages)',
+        'Phonics-based reading programs',
+        'Creative writing and storytelling sessions',
+        'Public speaking and presentation skills',
+        'Library reading programs',
+      ],
+    },
+    {
+      id: 'social',
+      title: 'Social and Emotional Development',
+      icon: 'Heart',
+      description: 'Fostering empathy, self-awareness, positive relationships, and responsible behaviour within a supportive learning environment.',
+      color: 'navy',
+      details: [
+        'Character education and value-based learning',
+        'Conflict resolution and peer mediation',
+        'Emotional intelligence development',
+        'Team building activities',
+        'Community service programs',
+      ],
+    },
+    {
+      id: 'environmental',
+      title: 'Environmental and Global Awareness',
+      icon: 'Globe',
+      description: 'Encouraging inquiry into science, society, and culture to develop informed and globally conscious learners.',
+      color: 'gold',
+      details: [
+        'Hands-on science experiments',
+        'Environmental conservation projects',
+        'Cultural diversity programs',
+        'Global citizenship education',
+        'Field trips and nature studies',
+      ],
+    },
+    {
+      id: 'physical',
+      title: 'Physical Development and Well-Being',
+      icon: 'Activity',
+      description: 'Promoting coordination, fitness, and healthy habits through structured physical and movement-based activities.',
+      color: 'maroon',
+      details: [
+        'Daily physical education classes',
+        'Sports training and competitions',
+        'Yoga and meditation sessions',
+        'Health and nutrition education',
+        'Motor skills development programs',
+      ],
+    },
+    {
+      id: 'creative',
+      title: 'Creative Arts and Expression',
+      icon: 'Palette',
+      description: 'Nurturing imagination and confidence through art, music, dance, and dramatic activities.',
+      color: 'navy',
+      details: [
+        'Visual arts and crafts',
+        'Music (vocal and instrumental)',
+        'Dance (classical, folk, contemporary)',
+        'Drama and theater',
+        'Creative expression workshops',
+      ],
+    },
+    {
+      id: 'mathematical',
+      title: 'Mathematical and Logical Thinking',
+      icon: 'Calculator',
+      description: 'Developing number sense, problem-solving, and analytical reasoning through hands-on learning.',
+      color: 'gold',
+      details: [
+        'Conceptual mathematics teaching',
+        'Hands-on manipulative learning',
+        'Problem-solving workshops',
+        'Mathematics lab activities',
+        'Logic puzzles and games',
+      ],
+    },
+  ],
+};
