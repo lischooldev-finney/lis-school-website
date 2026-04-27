@@ -12,19 +12,20 @@ export const schoolData = {
       country: "India",
     },
     contact: {
-      phones: ["83339 86173", "93987 89821"],
-      whatsapp: "+918333986173",
-      email: "@lighthouseschool.edu.in",
+      phones: ["98872 26699", "93987 89821"],
+      whatsapp: "+919887226699",
+      email: "lighthouse.school.intl@gmail.com",
     },
     campusType: "A/C Campus",
   },
 
   seo: {
-    title: "The Lighthouse School - International Education Beyond Borders",
+    title:
+      "The Lighthouse School Vizianagaram | Best International Residential School in Vizianagaram",
     description:
-      "Premier international school in Vizianagaram offering world-class education with modern facilities, holistic curriculum, and residential programs.",
+      "The Lighthouse School is the top international residential CBSE school in Vizianagaram, Andhra Pradesh, offering modern A/C campus facilities, IIT-JEE & NEET coaching, safe boarding, and holistic education.",
     keywords:
-      "international school vizianagaram, cbse school, residential school, iit jee coaching, neet coaching, best school vizianagaram",
+      "best school in vizianagaram, international school vizianagaram, boarding school vizianagaram, cbse school vizianagaram, residential school vizianagaram, iit jee coaching vizianagaram, neet coaching vizianagaram, vizianagram school",
   },
 
   navigation: {

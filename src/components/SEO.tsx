@@ -131,12 +131,15 @@ export const SEO = ({ path }: { path: string }) => {
     setMeta('meta[name="keywords"]', 'content', schoolData.seo.keywords);
     setMeta('link[rel="canonical"]', 'href', canonical);
     setMeta('meta[property="og:type"]', 'content', 'website');
+    setMeta('meta[property="og:locale"]', 'content', 'en_IN');
     setMeta('meta[property="og:site_name"]', 'content', schoolData.schoolInfo.name);
     setMeta('meta[property="og:title"]', 'content', meta.title);
     setMeta('meta[property="og:description"]', 'content', meta.description);
     setMeta('meta[property="og:url"]', 'content', canonical);
     setMeta('meta[property="og:image"]', 'content', defaultImage);
     setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
+    setMeta('meta[name="geo.region"]', 'content', 'IN-AP');
+    setMeta('meta[name="geo.placename"]', 'content', 'Vizianagaram');
     setMeta('meta[name="twitter:title"]', 'content', meta.title);
     setMeta('meta[name="twitter:description"]', 'content', meta.description);
     setMeta('meta[name="twitter:image"]', 'content', defaultImage);
