@@ -5,8 +5,23 @@ import { schoolData } from '../content/schoolData';
 import { contactContent } from '../content/contactContent';
 import { SectionTitle } from '../components/shared/SectionTitle';
 import { LucideIcon } from 'lucide-react';
+import { useState } from 'react';
+import { sendConversion } from '../utils/gtag';
 
 export const ContactPage = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Trigger Google Ads conversion event
+    try {
+      sendConversion();
+    } catch (err) {
+      // ignore
+    }
+    setSubmitted(true);
+  };
+
   return (
     <div className="pt-24">
       {/* Hero Section */}
@@ -215,7 +230,7 @@ export const ContactPage = () => {
               className="bg-gradient-to-br from-white to-cream rounded-3xl p-8 md:p-10 shadow-xl border border-gray-100/50"
             >
               <h2 className="font-playfair text-3xl font-bold text-navy mb-8">Send us a Message</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block font-poppins font-medium text-navy mb-3 text-sm">Full Name</label>
                   <input
@@ -261,6 +276,11 @@ export const ContactPage = () => {
                   Send Message
                 </motion.button>
               </form>
+              {submitted && (
+                <div className="mt-6 p-6 rounded-xl bg-green-50 border border-green-200 text-green-800">
+                  Thank you — your message has been received. We'll get back to you soon.
+                </div>
+              )}
             </motion.div>
           </div>
         </div>
