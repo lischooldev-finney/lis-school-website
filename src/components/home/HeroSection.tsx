@@ -1,22 +1,15 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { schoolData } from '../../content/schoolData';
 import { Button } from '../shared/Button';
-import { navigateTo } from '../../utils/navigation';
 
 export const HeroSection = () => {
-  const handleNavClick = (path: string) => {
-    navigateTo(path);
-  };
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative flex min-h-screen items-end overflow-hidden md:items-center">
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-cover bg-center md:bg-[length:125%_auto] md:bg-[position:center_top]"
         style={{
           backgroundImage: 'url(/lis_school.jpeg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
         }}
       >
         {/* <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-maroon/80 to-navy/90" /> */}
@@ -25,19 +18,25 @@ export const HeroSection = () => {
 
         {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-950/85 via-blue-900/70 to-blue-950/85" /> */}
         {/* <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/85 via-stone-800/70 to-zinc-900/85" /> */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent md:bg-gradient-to-r md:from-black/90 md:via-black/55 md:to-black/10" />
+        <div className="absolute inset-0 hidden bg-gradient-to-t from-black/50 via-transparent to-transparent md:block" />
       </div>
 
-      <div className="relative z-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-4xl">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-24 pt-20 sm:px-6 md:py-32 lg:px-8">
+        <div className="relative max-w-4xl">
+          <div
+            aria-hidden="true"
+            className="absolute -inset-x-3 -inset-y-5 rounded-[2rem] bg-black/50 blur-2xl sm:-inset-x-6 md:hidden"
+          />
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-6"
+            transition={{ duration: 0.7 }}
+            className="relative z-10 mb-5 hidden items-center gap-3 sm:flex"
           >
-            <span className="inline-block px-6 py-2 bg-gold/10 backdrop-blur-sm border border-gold/30 rounded-full text-gold  font-bold font-montserrat text-lg uppercase tracking-wider mb-16">
-              Admissions Open 2026-27
+            <span className="h-px w-10 bg-gold sm:w-14" />
+            <span className="font-poppins text-xs font-semibold uppercase tracking-[0.24em] text-gold sm:text-sm">
+              The Lighthouse School
             </span>
           </motion.div>
 
@@ -45,7 +44,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="relative z-10 mb-5 max-w-sm font-playfair text-3xl font-bold leading-[1.12] text-white [text-shadow:0_4px_18px_rgba(0,0,0,0.9)] sm:mb-6 sm:max-w-none sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {schoolData.hero.headline}
           </motion.h1>
@@ -54,7 +53,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-inter text-xl md:text-2xl text-white/90 mb-12 leading-relaxed"
+            className="relative z-10 mb-7 max-w-sm font-inter text-sm leading-6 text-white/95 [text-shadow:0_2px_8px_rgba(0,0,0,0.95)] sm:mb-9 sm:max-w-3xl sm:text-lg md:text-xl md:leading-relaxed"
           >
             {schoolData.hero.subheadline}
           </motion.p>
@@ -63,21 +62,13 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-wrap gap-4"
+            className="relative z-10 flex flex-wrap gap-4"
           >
-            <Button
-              variant="primary"
-              size="lg"
-              icon={ArrowRight}
-              onClick={() => handleNavClick('/admissions')}
-            >
-              Admissions Open 2026-27
-            </Button>
             <Button
               variant="outline"
               size="lg"
               icon={Download}
-              className="bg-white/10 border-white text-white hover:bg-white hover:text-maroon"
+              className="border-white/80 bg-black/25 px-5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.4)] backdrop-blur-sm hover:bg-white hover:text-maroon sm:px-8"
             >
               Download Brochure
             </Button>

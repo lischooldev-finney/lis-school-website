@@ -1,4 +1,4 @@
-const internalRoutePattern = /^\/(about|curriculum|facilities|activities|academics|admissions|gallery|contact)?(?:#.*)?$/;
+const internalRoutePattern = /^\/(about|mandatory-documents|curriculum|facilities|activities|academics|gallery|contact)?(?:#.*)?$/;
 
 export const normalizePath = (path: string) => {
   if (path.startsWith('#/')) {

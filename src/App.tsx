@@ -11,9 +11,9 @@ import { CurriculumPage } from './pages/CurriculumPage';
 import { FacilitiesPage } from './pages/FacilitiesPage';
 import { ActivitiesPage } from './pages/ActivitiesPage';
 import { AcademicsPage } from './pages/AcademicsPage';
-import { AdmissionsPage } from './pages/AdmissionsPage';
 import { ContactPage } from './pages/ContactPage';
 import { GalleryPage } from './pages/GalleryPage';
+import { MandatoryDocumentsPage } from './pages/MandatoryDocumentsPage';
 import { SEO } from './components/SEO';
 import { getCurrentPath } from './utils/navigation';
 
@@ -42,6 +42,8 @@ function App() {
         return <HomePage />;
       case '/about':
         return <AboutPage />;
+      case '/mandatory-documents':
+        return <MandatoryDocumentsPage />;
       case '/curriculum':
         return <CurriculumPage />;
       case '/facilities':
@@ -50,8 +52,6 @@ function App() {
         return <ActivitiesPage />;
       case '/academics':
         return <AcademicsPage />;
-      case '/admissions':
-        return <AdmissionsPage />;
       case '/contact':
         return <ContactPage />;
       case '/gallery':

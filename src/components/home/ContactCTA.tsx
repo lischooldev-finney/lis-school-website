@@ -117,7 +117,7 @@ export const ContactCTA = () => {
                 variant="primary"
                 size="lg"
                 icon={ArrowRight}
-                onClick={() => handleNavClick('/admissions')}
+                onClick={() => handleNavClick('/contact')}
                 className="bg-white text-maroon hover:bg-gold hover:text-navy"
               >
                 Book a Visit

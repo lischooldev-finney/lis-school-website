@@ -22,7 +22,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-navy via-navy-dark to-maroon-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-white/20 bg-navy/40 shadow-sm">
@@ -106,7 +106,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* <div>
+          <div>
             <h4 className="font-poppins text-lg font-semibold mb-6">Newsletter</h4>
             <p className="font-inter text-white/80 mb-4">
               Subscribe to receive updates and news from The Lighthouse School.
@@ -124,7 +124,7 @@ export const Footer = () => {
                 Subscribe
               </Button>
             </form>
-          </div> */}
+          </div>
         </div>
 
         <div className="border-t border-white/20 pt-8">

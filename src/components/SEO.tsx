@@ -15,6 +15,10 @@ const pageMeta: Record<string, { title: string; description: string; includeFaq?
     title: 'About The Lighthouse School | International School in Vizianagaram',
     description: schoolData.about.short,
   },
+  '/mandatory-documents': {
+    title: 'Mandatory Disclosure | The Lighthouse School Vizianagaram',
+    description: 'View official school information, facilities, leadership details, documents, and certificates published by The Lighthouse School, Pedatadivada.',
+  },
   '/curriculum': {
     title: 'Curriculum | The Lighthouse School Vizianagaram',
     description: schoolData.curriculum.intro,
@@ -30,10 +34,6 @@ const pageMeta: Record<string, { title: string; description: string; includeFaq?
   '/academics': {
     title: 'Academics, IIT-JEE and NEET Coaching | The Lighthouse School',
     description: 'Academic excellence with CBSE-aligned learning, IIT-JEE and NEET coaching, continuous assessment, and holistic student growth systems.',
-  },
-  '/admissions': {
-    title: `${schoolData.admissions.title} | The Lighthouse School Vizianagaram`,
-    description: schoolData.admissions.intro,
   },
   '/gallery': {
     title: 'Campus Gallery | The Lighthouse School Vizianagaram',
@@ -131,15 +131,12 @@ export const SEO = ({ path }: { path: string }) => {
     setMeta('meta[name="keywords"]', 'content', schoolData.seo.keywords);
     setMeta('link[rel="canonical"]', 'href', canonical);
     setMeta('meta[property="og:type"]', 'content', 'website');
-    setMeta('meta[property="og:locale"]', 'content', 'en_IN');
     setMeta('meta[property="og:site_name"]', 'content', schoolData.schoolInfo.name);
     setMeta('meta[property="og:title"]', 'content', meta.title);
     setMeta('meta[property="og:description"]', 'content', meta.description);
     setMeta('meta[property="og:url"]', 'content', canonical);
     setMeta('meta[property="og:image"]', 'content', defaultImage);
     setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
-    setMeta('meta[name="geo.region"]', 'content', 'IN-AP');
-    setMeta('meta[name="geo.placename"]', 'content', 'Vizianagaram');
     setMeta('meta[name="twitter:title"]', 'content', meta.title);
     setMeta('meta[name="twitter:description"]', 'content', meta.description);
     setMeta('meta[name="twitter:image"]', 'content', defaultImage);

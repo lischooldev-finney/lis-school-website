@@ -39,25 +39,20 @@ src/
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
-
 ```bash
 npm install
 ```
 
 ### 2. Development Server
-
 ```bash
 npm run dev
 ```
-
 Open http://localhost:5173 in your browser
 
 ### 3. Build for Production
-
 ```bash
 npm run build
 ```
-
 Output will be in `dist/` folder
 
 ## 📝 How to Edit Content
@@ -68,14 +63,14 @@ Output will be in `dist/` folder
 
 ```typescript
 export const schoolInfo = {
-  name: "The Lighthouse School",
+  name: 'The Lighthouse School',
   contact: {
-    phones: ["9887226699", "83339 86173", "93987 89821"], // ← EDIT HERE
-    whatsapp: "9887226699", // ← EDIT HERE
-    email: "lighthouse.school.intl@gmail.com", // ← EDIT HERE
+    phones: ['83339 86173', '93987 89821'],  // ← EDIT HERE
+    whatsapp: '8333986173',                   // ← EDIT HERE
+    email: '@lighthouseschool.edu.in',   // ← EDIT HERE
   },
   address: {
-    street: "Main Road, Pedatadivada", // ← EDIT HERE
+    street: 'Main Road, Pedatadivada',        // ← EDIT HERE
     // ...
   },
 };
@@ -103,7 +98,6 @@ export const schoolInfo = {
 **File:** `src/content/galleryContent.ts`
 
 Add new images:
-
 ```typescript
 images: [
   {
@@ -120,7 +114,6 @@ images: [
 ### Change Colors
 
 **Files:**
-
 1. `src/theme/themeConfig.ts`
 2. `tailwind.config.js`
 
@@ -179,14 +172,12 @@ colors: {
 ## 🖼️ Image Management
 
 ### Using Pexels (Current Setup)
-
 1. Go to [Pexels.com](https://www.pexels.com)
 2. Find image and copy URL
 3. Add `?auto=compress&cs=tinysrgb&w=800` for thumbnails
 4. Add `?auto=compress&cs=tinysrgb&w=1920` for hero images
 
 ### Using Local Images
-
 1. Create folder: `public/images/`
 2. Add images to folder
 3. Reference as: `/images/your-image.jpg`
@@ -222,7 +213,6 @@ The website uses **hash-based routing**:
 ## 📱 Features Included
 
 ### UX Enhancements
-
 - ✅ Sticky header with scroll detection
 - ✅ Active page highlighting in menu
 - ✅ Scroll progress bar (top)
@@ -236,7 +226,6 @@ The website uses **hash-based routing**:
 - ✅ Auto-scrolling announcement bar
 
 ### Animations
-
 - ✅ Fade-in on scroll
 - ✅ Hover effects on cards
 - ✅ Staggered list animations
@@ -244,7 +233,6 @@ The website uses **hash-based routing**:
 - ✅ Button interactions
 
 ### Responsive Design
-
 - ✅ Mobile (320px+)
 - ✅ Tablet (768px+)
 - ✅ Desktop (1024px+)
@@ -253,21 +241,18 @@ The website uses **hash-based routing**:
 ## 🌐 Deployment Options
 
 ### Option 1: Netlify (Recommended)
-
 1. Push code to GitHub
 2. Connect to Netlify
 3. Build command: `npm run build`
 4. Publish directory: `dist`
 
 ### Option 2: Vercel
-
 1. Push code to GitHub
 2. Import project to Vercel
 3. Framework preset: Vite
 4. Deploy
 
 ### Option 3: Static Hosting
-
 1. Run `npm run build`
 2. Upload `dist/` folder contents to your hosting
 3. Configure server for SPA routing
@@ -275,17 +260,13 @@ The website uses **hash-based routing**:
 ## 🔧 Common Tasks
 
 ### Update Phone Number
-
 **File:** `src/content/common.ts`
-
 ```typescript
-phones: ["NEW-NUMBER-1", "NEW-NUMBER-2"];
+phones: ['NEW-NUMBER-1', 'NEW-NUMBER-2']
 ```
 
 ### Change Hero Image
-
 **File:** `src/content/homeContent.ts`
-
 ```typescript
 hero: {
   backgroundImage: 'NEW-IMAGE-URL',
@@ -293,27 +274,23 @@ hero: {
 ```
 
 ### Add New Facility
-
 **File:** `src/content/facilitiesContent.ts`
-
 ```typescript
 campusFacilities: [
   {
-    id: "new-facility",
-    title: "New Facility Name",
-    description: "Description...",
-    icon: "Icon Name",
-    image: "IMAGE-URL",
-    features: ["Feature 1", "Feature 2"],
+    id: 'new-facility',
+    title: 'New Facility Name',
+    description: 'Description...',
+    icon: 'Icon Name',
+    image: 'IMAGE-URL',
+    features: ['Feature 1', 'Feature 2'],
   },
   // ... existing facilities
-];
+]
 ```
 
 ### Update Admission Dates
-
 **File:** `src/content/admissionsContent.ts`
-
 ```typescript
 hero: {
   title: 'Admissions Open 2027-28',  // ← Change year
@@ -330,26 +307,22 @@ hero: {
 ## 🆘 Troubleshooting
 
 ### Build Fails
-
 ```bash
 npm install
 npm run typecheck
 ```
 
 ### Images Not Loading
-
 - Check URL is publicly accessible
 - For local images, verify they're in `public/` folder
 - Clear browser cache
 
 ### Navigation Not Working
-
 - Verify hash format: `#/pagename` not `/pagename`
 - Check route exists in `src/App.tsx`
 - Check link in `src/content/common.ts`
 
 ### Fonts Not Appearing
-
 - Check Google Fonts URL in `index.css`
 - Clear browser cache
 - Verify font names in `tailwind.config.js`
@@ -372,7 +345,6 @@ npm run typecheck
 ## 📞 Support
 
 For technical issues or customization help:
-
 1. Check documentation files
 2. Review content files for examples
 3. Test in development mode: `npm run dev`
@@ -381,7 +353,7 @@ For technical issues or customization help:
 ---
 
 **Built for The Lighthouse School**
-_International Education Beyond Borders_
+*International Education Beyond Borders*
 
 Version: 1.0.0
 Last Updated: 2026
